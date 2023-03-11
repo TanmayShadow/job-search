@@ -1,0 +1,58 @@
+/* search bar css */
+.search-bar{
+    background-color: rgb(255, 255, 255);
+    width: max-content;
+    border: 3px solid rgb(211 211 211);
+    box-shadow: 1px 3px 9px -1px black;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.inputs{
+    width: 20rem;
+    border-top: none;
+    border: none;
+    font-size: 19px;
+    padding: 4px;
+    outline: none;
+    
+}
+#skill{
+    border-right: 2px solid black;
+}
+#search-btn{
+    border-radius: 13px;
+    width: 71px;
+}
+
+/* media query for max size 780 px */
+@media (max-width: 780px){
+    .search-bar{
+        padding: 3px;
+    }
+    .inputs{
+        width: 14rem;
+        font-size: 15px;
+        padding: 2px;
+    }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 547px){
+    .search-bar{
+        padding: 1px;
+    }
+    .inputs{
+        width: 7.8rem;
+        font-size: 15px;
+        padding: 1px;
+        border-top-left-radius: 10px;
+    }
+    #search-btn{
+        padding: 6px;
+        width: 64px;
+        height: fit-content;
+    }
+}
