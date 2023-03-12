@@ -26,6 +26,35 @@
     border-radius: 13px;
     width: 71px;
 }
+.display-text{
+    margin-top: 50px;
+}
+.display-text img{
+    width: 300px;
+}
+
+.sort-box{
+    margin-left: 3em;
+    display: grid;
+    font-size: 18px;
+    width: 210px;
+    margin-bottom: -8px;
+    background: white;
+    margin-top: 10px;
+    box-shadow: 1px 1px 6px 2px #a1a1a1;
+    height: 125px;
+    align-items: center;
+    padding: 12px;
+    font-family: 'Cabin', sans-serif;
+    border-radius: 14px;
+}
+
+/* media query for max size 1400 px */
+@media (max-width: 1400px){
+    .sort-box{
+        margin-bottom: 2px;
+    }
+}
 
 /* media query for max size 780 px */
 @media (max-width: 780px){
@@ -37,6 +66,7 @@
         font-size: 15px;
         padding: 2px;
     }
+    
 }
 
 /* Media query for mobile phones */
