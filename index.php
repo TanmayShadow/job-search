@@ -314,9 +314,7 @@ else
         <li class="nav-item">
           <a class="nav-link mx-2" href="./jobs.php">JOBS</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link mx-2" href="#" target="_blank">SkillUp</a>
-        </li>
+        
         <li class="nav-item">
           <a class="nav-link mx-2" onclick="checkLogin()" target="_blank" id="loginbtn"><?php echo $btn; ?></a>
         </li>
@@ -331,9 +329,9 @@ else
   {
     let btn = document.getElementById("loginbtn");
     if(btn.innerHTML=="Login")
-    location.replace("./signin.php");
+      location.href = "./signin.php";
     else
-    location.replace("./logout.php");
+      location.href = "./logout.php";
   }
 </script>
 <!--navbar ends-->
@@ -399,12 +397,12 @@ else
       ></a>
 
       <!-- Linkedin -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/tanmay-shindkar/" role="button"
         ><i class="fab fa-linkedin-in"></i
       ></a>
 
       <!-- Github -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/TanmayShadow" role="button"
         ><i class="fab fa-github"></i
       ></a>
     </section>

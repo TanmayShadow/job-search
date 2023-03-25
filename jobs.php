@@ -120,9 +120,6 @@ else
           <a class="nav-link mx-2" href="./jobs.php">JOBS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mx-2" href="#" target="_blank">SkillUp</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link mx-2" onclick="checkLogin()" target="_blank" id="loginbtn"><?php echo $btn; ?></a>
         </li>
       </ul>

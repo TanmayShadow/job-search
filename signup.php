@@ -121,22 +121,19 @@ mysqli_close($conn);
 
     <div class="container">
        <div class="row">
-         <div class="col-md-6 mx-auto log1">
+         <div class="col-md-6 mx-auto log1" id="signin-form">
+            <center>
          <center><h2><b>Sign up</b></h2><br></center>
            <form action="" method="post">
-             Username
-             <input type="text" name="username" class="form-control" placeholder="Create Username" required><br>
-             Password   
-             <input type="password" name="password" class="form-control" id="pass" placeholder="Create Password" required>
-             <input type="checkbox" onclick="show()">Show password<br><br>
-             Confirm password
-             <input type="password" name="confirm_password" class="form-control" id="rpass" placeholder="Re-Enter Password" required onkeyup="myfunction()">
+             <input type="text" name="username" class="form-control" placeholder="Create Username" style="background: #332d2d;border: 2px solid white;max-width: 24rem;color: white !important;margin-bottom:20px;font-size: 20px;border-radius: 6px;" required><br>  
+             <input type="password" name="password" class="form-control" id="pass" placeholder="Create Password" style="background: #332d2d;border: 2px solid white;max-width: 24rem;color: white !important;margin-bottom:20px;font-size: 20px;border-radius: 6px;" required><br>
+             <input type="password" name="confirm_password" class="form-control" id="rpass" placeholder="Re-Enter Password" style="background: #332d2d;border: 2px solid white;max-width: 24rem;color: white !important;margin-bottom:20px;font-size: 20px;border-radius: 6px;" required onkeyup="myfunction()">
              <p id="r1" ></p>
-             <input type="submit" class="btn" name="submit" value="Sign up" style="width:100%;background-color:rgb(0, 0, 0);color:white;font-size:18px;"><br>
-             <b><p style="padding-top:10px;color:black;">Already have an account?<a href="signin.php" style="color:rgb(0,0,0);text-decoration:none;"> Login.</a></p></b> 
+             <input type="submit" class="btn" id="login_btn"name="submit" value="Sign up" style="width:100%;color:white;font-size:18px;"><br>
+             <b><p style="padding-top:10px;color:white;margin-top:20px;">Already have an account?<a href="signin.php" style="color:#007bff;text-decoration:none;"> Login.</a></p></b> 
              
             </form>
-          
+    </center>
          </div>
 
        </div>

@@ -113,25 +113,23 @@ if(empty($err))
     <div class="container">
 
        <div class="row">
-         <div class="col-md-6 mx-auto log">
-            <a href="logout.php"><i class="fa fa-sign-out" style="color:black;margin-left:10px;margin-top:0px" data-bs-toggle="modal" data-bs-target="#out"></i></a> 
-            
-
+         <div class="col-md-6 mx-auto log" id="signin-form">
+            <center>
           
-         <center><h2><b>Login</b></h2><br></center>
+         <center><h2><b>LOGIN</b></h2><br></center>
+         <p style="color: #999494;margin-bottom:40px;font-size:18px">Please enter your login and password!</p>
          
            <form action="" method="post">
-             Username
-             <input type="text" name="username" class="form-control" placeholder="Enter Username" required><br>
-             Password
-             <input type="password" name="password" class="form-control" id="pass" placeholder="Enter Password" required>
-             <input type="checkbox" onclick="show()">Show password<br><br>
-             <input type="submit" class="btn" name="submit" value="Log in" style="width:100%;background-color:rgb(0, 0, 0);color:white;font-size:18px;"><br>
-             <b><p style="padding-top:10px;">Don't have an account?<a class="loga"href="signup.php" style="color:rgb(0,0,0);text-decoration:none;"> Sign up.</a></p></b>
+             <input type="text" name="username" class="form-control textbox" placeholder="Enter Username" style="background: #332d2d;border: 2px solid white;max-width: 24rem;color: white !important;margin-bottom:20px;font-size: 20px;border-radius: 6px;" required><br>
+             <input type="password" name="password" class="form-control textbox" id="pass" placeholder="Enter Password" style="background: #332d2d;border: 2px solid white;max-width: 24rem;color: white !important;margin-bottom:20px;font-size: 20px;border-radius: 6px;" required>
+             <br><br>
+             <input type="submit" class="btn" id="login_btn" name="submit" value="Log in" style="width:100%;color:white;font-size:18px;"><br>
+             <b><p style="padding-top:10px;margin-top:20px;">Don't have an account?<a class="loga"href="signup.php" style="color:#007bff;text-decoration:none;"> Sign up.</a></p></b>
              <div>
                
              </div>
         </form>
+    </center>
          </div>
        </div>
      </div>
